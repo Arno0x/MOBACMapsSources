@@ -1,0 +1,20 @@
+name = "IGN Geoportail maps";
+
+tileType = "jpg";
+tileSize = 256;
+minZoom = 0;
+maxZoom = 18;
+tileUpdate = TileUpdate.IfModifiedSince;
+backgroundColor = "#ffffff";
+ignoreError = "True";
+
+String getTileUrl( int zoom, int x, int y ) {
+	//return "http://wxs.ign.fr/6usqvehthxi0ck95g2s9sc36/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&LAYER=GEOGRAPHICALGRIDSYSTEMS.MAPS&STYLE=normal&FORMAT=image/jpeg&TILEMATRIXSET=PM&TILEMATRIX=" + zoom + "&TILEROW=" + y + "&TILECOL=" + x + ".jpg";
+	//return "http://wxs.ign.fr/6qcguib31zj0w42ht311a1lz/geoportail/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=GEOGRAPHICALGRIDSYSTEMS.MAPS&STYLE=normal&TILEMATRIXSET=PM&TILEMATRIX=" + zoom + "&TILEROW=" + y + "&TILECOL=" + x + "&FORMAT=image%2Fjpeg";
+	return "https://wxs.ign.fr/an7nvfzojv5wa96dsga5nk8w/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image/jpeg&TileMatrix=" + zoom + "&TileCol=" + x+ "&TileRow=" + y;
+}
+
+void addHeaders( java.net.HttpURLConnection conn) {
+	conn.addRequestProperty("Referer","https://www.geoportail.gouv.fr/carte");
+	conn.addRequestProperty("User-Agent","Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:56.0) Gecko/20100101 Firefox/56.0");
+} 

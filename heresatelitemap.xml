@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customMapSource>
+<name>HERE Satelite Map</name>
+<minZoom>1</minZoom>
+<maxZoom>18</maxZoom>
+<tileType>PNG</tileType>
+<tileUpdate>IfNoneMatch</tileUpdate>
+<serverParts>1 2 3 4</serverParts>
+<url>http://{$serverpart}.aerial.maps.api.here.com/maptile/2.1/maptile/newest/satellite.day/{$z}/{$x}/{$y}/256/png8?lg=FRE&amp;app_id=huv9jQPUulpofxzKYEAJ&amp;token=pJ6gIJVShM9bvyXak5vo0Q&amp;xnlp=CL_JSMv2.5.3,SID_CFD2477C-8F0A-4304-9724-E8AF461C9750</url>
+</customMapSource>
