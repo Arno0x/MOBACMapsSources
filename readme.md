@@ -18,4 +18,4 @@ Maps
   - google.xml: maps from the Google map service - [https://www.google.com/maps](https://www.google.com/maps)
   - heresatelistemap.xml: satellite maps from the Here service - [https://wego.here.com/](https://wego.here.com/)
   - opentopomap.xml : maps from the OpenTopo map service - [https://opentopomap.org](https://opentopomap.org)
-  - geoportalpl.xml : photo maps from the GeoPortal.pl map service - [https://mapy.geoportal.gov.pl/](https://mapy.geoportal.gov.pl/)
+  - geoportalpl.xml : photo maps from the GeoPortal.gov.pl map service - [https://mapy.geoportal.gov.pl/](https://mapy.geoportal.gov.pl/)
