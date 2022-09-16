@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customWmsMapSource>
+    <name>Geoportal.pl ortophoto</name>
+    <minZoom>10</minZoom>
+    <maxZoom>20</maxZoom>
+    <tileType>jpg</tileType>
+    <version>1.3.0</version>
+    <layers>Raster</layers>
+    <url>https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMS/HighResolution?</url>
+    <coordinatesystem>EPSG:4326</coordinatesystem>
+	<aditionalparameters>&amp;EXCEPTIONS=BLANK&amp;Styles=</aditionalparameters>
+</customWmsMapSource>
