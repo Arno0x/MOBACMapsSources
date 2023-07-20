@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customMapSource>
+<name>English Bing Map</name>
+<minZoom>1</minZoom>
+<maxZoom>18</maxZoom>
+<tileType>PNG</tileType>
+<tileUpdate>IfNoneMatch</tileUpdate>
+<serverParts>0 1 2 3</serverParts>
+<url>http://ak.dynamic.t{$serverpart}.tiles.virtualearth.net/comp/ch/{$q}?mkt=en&amp;it=G,VE,BX,L,LA&amp;shading=hill&amp;og=42&amp;n=z</url>
+</customMapSource>
